@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — MuscleFLo</title>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #080808;
+      --surface: #0f0f0f;
+      --surface2: #141414;
+      --border: #1c1c1c;
+      --blue: #2e7dff;
+      --blue-bright: #4d94ff;
+      --blue-dim: #1a4a99;
+      --silver: #c8d0d8;
+      --silver-dim: #7a8590;
+      --text: #e8eaed;
+      --muted: #555f6a;
+      --font: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+      --mono: 'Courier New', monospace;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .wrap {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: var(--mono);
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .logo .muscle { color: var(--silver); }
+    .logo .flo { color: var(--blue-bright); }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      color: var(--silver-dim);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.15s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--blue-bright);
+    }
+
+    .hero {
+      padding: 4rem 0 3rem;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.72rem;
+      font-family: var(--mono);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--blue-bright);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--blue-bright);
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+      line-height: 1.1;
+    }
+
+    .hero-meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: var(--mono);
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(
+        90deg,
+        var(--blue-dim) 0%,
+        var(--border) 60%,
+        transparent 100%
+      );
+      margin: 0 0 3rem;
+    }
+
+    section {
+      margin-bottom: 2.75rem;
+    }
+
+    h2 {
+      font-size: 0.72rem;
+      font-family: var(--mono);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--blue-bright);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    p {
+      color: #9aa3ad;
+      font-size: 0.95rem;
+      margin-bottom: 0.9rem;
+    }
+
+    ul {
+      padding-left: 0;
+      margin-bottom: 0.9rem;
+      list-style: none;
+    }
+
+    li {
+      color: #9aa3ad;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+
+    li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--blue-dim);
+      font-size: 0.8rem;
+    }
+
+    strong {
+      color: var(--silver);
+      font-weight: 500;
+    }
+
+    a {
+      color: var(--blue-bright);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 0;
+      margin-top: 3rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    footer p {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin: 0;
+      font-family: var(--mono);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="wrap">
+      <div class="header-inner">
+        <div class="logo">
+          <span class="muscle">Muscle</span><span class="flo">Flo</span>
+        </div>
+
+        <nav>
+          <a href="index.html">Support</a>
+          <a href="privacy-policy.html">Privacy</a>
+          <a href="terms-of-service.html" class="active">Terms</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+
+    <div class="hero">
+      <div class="hero-eyebrow">Legal</div>
+      <h1>Terms of Service</h1>
+      <div class="hero-meta">
+        <div class="hero-meta">Effective Date: May 14, 2026<br>Last Updated: May 14, 2026</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>Acceptance of terms</h2>
+
+      <p>
+        By accessing or using MuscleFLo, you agree to be bound by these Terms of Service.
+        If you do not agree to these terms, you may not use the platform.
+      </p>
+    </section>
+
+    <section>
+      <h2>Eligibility</h2>
+
+      <p>
+        You must be at least 13 years old to use MuscleFLo.
+        By using the app, you represent that you meet this requirement.
+      </p>
+    </section>
+
+    <section>
+      <h2>Use of the service</h2>
+
+      <p>
+        MuscleFLo provides tools for fitness coaches and clients to manage workouts,
+        meal plans, progress tracking, check-ins, and communication.
+      </p>
+
+      <p>
+        You agree not to:
+      </p>
+
+      <ul>
+        <li>Use the platform for unlawful purposes.</li>
+        <li>Attempt to interfere with platform security.</li>
+        <li>Upload harmful, abusive, or misleading content.</li>
+        <li>Impersonate another individual or organization.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Health disclaimer</h2>
+
+      <p>
+        MuscleFLo does not provide medical advice, diagnosis, or treatment.
+      </p>
+
+      <p>
+        Always consult a qualified healthcare professional before beginning any
+        exercise or nutrition program.
+      </p>
+
+      <p>
+        Participation in fitness activities carries inherent risks, and you assume
+        full responsibility for your use of the platform.
+      </p>
+    </section>
+
+    <section>
+      <h2>User content</h2>
+
+      <p>
+        You retain ownership of content you upload, including workout logs,
+        progress photos, notes, and check-ins.
+      </p>
+
+      <p>
+        By uploading content, you grant MuscleFLo permission to store and process
+        that content solely for operating the service.
+      </p>
+    </section>
+
+    <section>
+      <h2>Accounts</h2>
+
+      <p>
+        You are responsible for maintaining the confidentiality of your account
+        and all activity occurring under it.
+      </p>
+
+      <p>
+        We reserve the right to suspend or terminate accounts that violate these Terms.
+      </p>
+    </section>
+
+    <section>
+      <h2>Third-party services</h2>
+
+      <p>
+        MuscleFLo relies on third-party providers including Supabase,
+        Apple Sign-In, Google Sign-In, and Expo Push Notifications.
+      </p>
+
+      <p>
+        Use of those services may also be governed by their own terms and policies.
+      </p>
+    </section>
+
+    <section>
+  <h2>Disclaimer of warranties</h2>
+
+  <p>
+    MuscleFLo is provided on an "AS IS" and "AS AVAILABLE" basis without
+    warranties of any kind, whether express or implied.
+  </p>
+
+  <p>
+    DreamsFlo LLC does not guarantee that the platform will be uninterrupted,
+    secure, error-free, or free from harmful components.
+  </p>
+    </section>
+
+    <section>
+      <h2>Limitation of liability</h2>
+
+      <p>
+        To the fullest extent permitted by law, DreamsFlo LLC shall not be liable
+        for any indirect, incidental, special, consequential, or punitive damages
+        arising out of or relating to your use of, inability to use, or reliance upon MuscleFLo or its services.
+      </p>
+    </section>
+
+    <section>
+  <h2>Termination and suspension</h2>
+
+  <p>
+    DreamsFlo LLC reserves the right, in its sole discretion and without prior notice,
+    to suspend, restrict, disable, or terminate your access to MuscleFLo at any time
+    and for any reason, including but not limited to violations of these Terms,
+    suspected fraudulent activity, misuse of the platform, security concerns,
+    unlawful conduct, or behavior that may expose MuscleFLo, its users,
+    or third parties to harm or liability.
+  </p>
+
+  <p>
+    We further reserve the right to investigate suspected violations and take any
+    action we deem appropriate, including removal of content, account suspension,
+    permanent account termination, or cooperation with law enforcement authorities.
+  </p>
+
+  <p>
+    Termination or suspension may occur without liability to DreamsFlo LLC,
+    including for any loss of access to content, data, or platform functionality.
+  </p>
+    </section>
+
+    <section>
+      <h2>Changes to these terms</h2>
+
+      <p>
+        We may update these Terms of Service periodically.
+        Continued use of MuscleFLo after changes are posted constitutes acceptance
+        of the revised terms.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact us</h2>
+
+      <p>
+        Questions regarding these Terms may be directed to:
+      </p>
+
+      <p>
+        <a href="mailto:aflores@dreamsflo.com">
+          aflores@dreamsflo.com
+        </a>
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner">
+
+        <p>
+          © 2026 DreamsFlo LLC · MuscleFLo · All rights reserved
+        </p>
+
+        <nav>
+          <a href="index.html">Support</a>
+          <a href="privacy-policy.html" style="margin-left:1.5rem;">Privacy</a>
+          <a href="terms-of-service.html" style="margin-left:1.5rem;">Terms</a>
+        </nav>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
