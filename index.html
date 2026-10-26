@@ -3,187 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Support — MuscleFLo</title>
-  <title>Terms — MuscleFLo</title>
+  <title>Support — MuscleFlo</title>
+  <link rel="alternate" hreflang="en" href="https://aflo17.github.io/Muscle-FLo/index.html" />
+  <link rel="alternate" hreflang="es" href="https://aflo17.github.io/Muscle-FLo/es/index.html" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --bg: #080808;
-      --surface: #0f0f0f;
-      --surface2: #141414;
-      --border: #1c1c1c;
-      --blue: #2e7dff;
-      --blue-bright: #4d94ff;
-      --blue-dim: #1a4a99;
-      --silver: #c8d0d8;
-      --silver-dim: #7a8590;
-      --text: #e8eaed;
-      --muted: #555f6a;
-      --font: -apple-system, 'Helvetica Neue', Arial, sans-serif;
-      --mono: 'Courier New', monospace;
-    }
-    body { background: var(--bg); color: var(--text); font-family: var(--font); line-height: 1.75; min-height: 100vh; }
-    header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 1.25rem 0; position: sticky; top: 0; z-index: 10; }
-    .wrap { max-width: 740px; margin: 0 auto; padding: 0 2rem; }
-    .header-inner { display: flex; align-items: center; justify-content: space-between; }
-    .logo { font-family: var(--mono); font-size: 1rem; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; }
-    .logo .muscle { color: var(--silver); }
-    .logo .flo { color: var(--blue-bright); }
-    nav { display: flex; gap: 1.5rem; }
-    nav a { font-size: 0.8rem; letter-spacing: 0.06em; color: var(--silver-dim); text-decoration: none; text-transform: uppercase; transition: color 0.15s; }
-    nav a:hover, nav a.active { color: var(--blue-bright); }
-    .hero { padding: 4rem 0 3rem; }
-    .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 0.72rem; font-family: var(--mono); letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue-bright); margin-bottom: 1.25rem; }
-    .hero-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--blue-bright); }
-    h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 700; letter-spacing: -0.02em; color: var(--text); margin-bottom: 0.75rem; line-height: 1.1; }
-    .subtitle { color: #9aa3ad; font-size: 1rem; }
-    .divider { height: 1px; background: linear-gradient(90deg, var(--blue-dim) 0%, var(--border) 60%, transparent 100%); margin: 0 0 3rem; }
-    section { margin-bottom: 2.75rem; }
-    h2 { font-size: 0.72rem; font-family: var(--mono); letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue-bright); margin-bottom: 1rem; display: flex; align-items: center; gap: 10px; }
-    h2::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-    p { color: #9aa3ad; font-size: 0.95rem; margin-bottom: 0.9rem; }
-    a { color: var(--blue-bright); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .faq-item { border: 1px solid var(--border); border-radius: 4px; margin-bottom: 0.6rem; overflow: hidden; background: var(--surface); }
-    .faq-q { padding: 1rem 1.25rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--silver); user-select: none; transition: background 0.15s; gap: 1rem; }
-    .faq-q:hover { background: var(--surface2); }
-    .faq-arrow { color: var(--blue-bright); font-style: normal; font-size: 1.1rem; transition: transform 0.2s; flex-shrink: 0; }
-    .faq-item.open .faq-arrow { transform: rotate(90deg); }
-    .faq-a { display: none; padding: 0 1.25rem 1rem; border-top: 1px solid var(--border); background: var(--bg); }
-    .faq-a p { margin: 0.75rem 0 0; font-size: 0.9rem; }
-    .faq-item.open .faq-a { display: block; }
-
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    @media (max-width: 500px) { .contact-grid { grid-template-columns: 1fr; } }
-    .contact-card { background: var(--surface); border: 1px solid var(--border); border-top: 2px solid var(--blue); border-radius: 4px; padding: 1.5rem; }
-    .contact-card-title { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-bright); margin-bottom: 0.75rem; }
-    .contact-card p { margin: 0; font-size: 0.9rem; }
-    .contact-card .note { color: var(--muted); font-size: 0.8rem; margin-top: 0.4rem; }
-
-    footer { border-top: 1px solid var(--border); padding: 2rem 0; margin-top: 3rem; }
-    .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
-    footer p { font-size: 0.75rem; color: var(--muted); margin: 0; font-family: var(--mono); }
-  </style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #080808; --surface: #0f0f0f; --surface2: #141414; --border: #1c1c1c;
+  --blue: #2e7dff; --blue-bright: #4d94ff; --blue-dim: #1a4a99;
+  --silver: #c8d0d8; --silver-dim: #7a8590; --text: #e8eaed; --muted: #6b7580;
+  --font: -apple-system, 'Helvetica Neue', Arial, sans-serif; --mono: 'Courier New', monospace;
+}
+body { background: var(--bg); color: var(--text); font-family: var(--font); line-height: 1.75; min-height: 100vh; }
+header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 1.25rem 0; position: sticky; top: 0; z-index: 10; }
+.wrap { max-width: 740px; margin: 0 auto; padding: 0 2rem; }
+@media (max-width: 500px) { .wrap { padding: 0 1rem; } }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.logo { font-family: var(--mono); font-size: 1rem; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; }
+.logo .muscle { color: var(--silver); } .logo .flo { color: var(--blue-bright); }
+nav { display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; }
+nav a { font-size: 0.8rem; letter-spacing: 0.06em; color: var(--silver-dim); text-decoration: none; text-transform: uppercase; transition: color 0.15s; }
+nav a:hover, nav a.active { color: var(--blue-bright); }
+nav a.lang { border: 1px solid var(--border); border-radius: 999px; padding: 0.15rem 0.7rem; color: var(--silver); }
+nav a.lang:hover { border-color: var(--blue-dim); }
+.hero { padding: 4rem 0 3rem; }
+.hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 0.72rem; font-family: var(--mono); letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue-bright); margin-bottom: 1.25rem; }
+.hero-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--blue-bright); }
+h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 700; letter-spacing: -0.02em; color: var(--text); margin-bottom: 0.75rem; line-height: 1.1; }
+.subtitle { color: #9aa3ad; font-size: 1rem; }
+.hero-meta { font-size: 0.8rem; color: var(--muted); font-family: var(--mono); }
+.divider { height: 1px; background: linear-gradient(90deg, var(--blue-dim) 0%, var(--border) 60%, transparent 100%); margin: 0 0 3rem; }
+section { margin-bottom: 2.75rem; }
+h2 { font-size: 0.72rem; font-family: var(--mono); letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue-bright); margin-bottom: 1rem; display: flex; align-items: center; gap: 10px; }
+h2::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+p { color: #9aa3ad; font-size: 0.95rem; margin-bottom: 0.9rem; }
+ul { padding-left: 0; margin-bottom: 0.9rem; list-style: none; }
+li { color: #9aa3ad; font-size: 0.95rem; margin-bottom: 0.5rem; padding-left: 1.25rem; position: relative; }
+li::before { content: '—'; position: absolute; left: 0; color: var(--blue-dim); font-size: 0.8rem; }
+strong { color: var(--silver); font-weight: 500; }
+a { color: var(--blue-bright); text-decoration: none; }
+a:hover { text-decoration: underline; }
+details.faq-item { border: 1px solid var(--border); border-radius: 4px; margin-bottom: 0.6rem; overflow: hidden; background: var(--surface); }
+details.faq-item summary { padding: 1rem 1.25rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--silver); list-style: none; gap: 1rem; }
+details.faq-item summary::-webkit-details-marker { display: none; }
+details.faq-item summary:hover { background: var(--surface2); }
+.faq-arrow { color: var(--blue-bright); font-size: 1.1rem; transition: transform 0.2s; flex-shrink: 0; }
+details.faq-item[open] .faq-arrow { transform: rotate(90deg); }
+.faq-a { padding: 0 1.25rem 1rem; border-top: 1px solid var(--border); background: var(--bg); }
+.faq-a p, .faq-a li { margin: 0.75rem 0 0; font-size: 0.9rem; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media (max-width: 500px) { .contact-grid { grid-template-columns: 1fr; } }
+.contact-card { background: var(--surface); border: 1px solid var(--border); border-top: 2px solid var(--blue); border-radius: 4px; padding: 1.5rem; }
+.contact-card-title { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-bright); margin-bottom: 0.75rem; }
+.contact-card p { margin: 0; font-size: 0.9rem; }
+.contact-card .note { color: var(--muted); font-size: 0.8rem; margin-top: 0.4rem; }
+.contact-box { background: var(--surface2); border: 1px solid var(--border); border-left: 2px solid var(--blue); padding: 1.5rem 1.75rem; border-radius: 4px; }
+.contact-box p:last-child { margin-bottom: 0; }
+footer { border-top: 1px solid var(--border); padding: 2rem 0; margin-top: 3rem; }
+.footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+footer p { font-size: 0.75rem; color: var(--muted); margin: 0; font-family: var(--mono); }
+</style>
 </head>
 <body>
   <header>
     <div class="wrap">
       <div class="header-inner">
         <div class="logo"><span class="muscle">Muscle</span><span class="flo">Flo</span></div>
-        <nav>
-          <a href="index.html" class="active">Support</a>
-          <a href="privacy-policy.html">Privacy</a>
-          <a href="Terms-of-service.html">Terms</a>
-        </nav>
+        <nav aria-label="Support"><a href="index.html" class="active" aria-current="page">Support</a><a href="privacy-policy.html">Privacy</a><a href="Terms-of-service.html">Terms</a><a class="lang" href="es/index.html" hreflang="es">Español</a></nav>
       </div>
     </div>
   </header>
-
-  <div class="wrap">
+  <main class="wrap">
     <div class="hero">
       <div class="hero-eyebrow">Help Center</div>
       <h1>Support</h1>
-      <p class="subtitle">Find answers to common questions or get in touch with us directly.</p>
+      <p class="subtitle">Answers to common questions, or get in touch with us directly.</p>
     </div>
     <div class="divider"></div>
-
     <section>
       <h2>Frequently asked questions</h2>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggle(this)">How do I sign in to MuscleFLo? <span class="faq-arrow">›</span></div>
-        <div class="faq-a"><p>MuscleFLo uses Google or Apple Sign-In — no password required. On the login screen, tap "Continue with Google" or "Continue with Apple" to get started.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggle(this)">How do I connect with my trainer? <span class="faq-arrow">›</span></div>
-        <div class="faq-a"><p>Your trainer adds you to their client list from their side of the app. Once they add your email address, you'll automatically appear in their client dashboard. No action needed from you.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggle(this)">Why am I not seeing my assigned workout? <span class="faq-arrow">›</span></div>
-        <div class="faq-a"><p>Workouts are assigned by your trainer for specific dates. Check the Sessions screen and make sure you're viewing the correct day. Pull down to refresh if you've just been assigned one.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggle(this)">How do push notifications work? <span class="faq-arrow">›</span></div>
-        <div class="faq-a"><p>MuscleFLo sends push notifications when your trainer assigns a new workout or meal plan. Make sure notifications are enabled for MuscleFLo in your iPhone Settings → Notifications.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggle(this)">How do I log a completed workout? <span class="faq-arrow">›</span></div>
-        <div class="faq-a"><p>From your dashboard, tap today's workout card to open it. Log your sets and reps as you go, then tap "Complete Workout" when you're done. Your trainer will be notified automatically.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggle(this)">How do I submit a check-in? <span class="faq-arrow">›</span></div>
-        <div class="faq-a"><p>Tap "Check-In" from the bottom navigation. Fill in your weekly metrics — weight, energy, sleep, notes — and optionally attach a progress photo. Tap Submit to send it to your trainer.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggle(this)">I'm a trainer. How do I add clients? <span class="faq-arrow">›</span></div>
-        <div class="faq-a"><p>From the Clients tab, tap the + button and enter your client's email address. They'll be added to your roster immediately once they have a MuscleFLo account.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggle(this)">How do I delete my account? <span class="faq-arrow">›</span></div>
-        <div class="faq-a"><p>Contact us at <a href="mailto:aflores@dreamsflo.com">aflores@dreamsflo.com</a> with your account email. We'll permanently delete your account and all associated data within 30 days.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggle(this)">What is the community feed? <span class="faq-arrow">›</span></div>
-        <div class="faq-a"><p>The community feed lets you share your completed workouts with others in your trainer's group. When you finish a workout, you'll have the option to post it to the feed. Your post will include your workout name, sets, volume, and exercise thumbnails.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggle(this)">Can I delete a post from the community feed? <span class="faq-arrow">›</span></div>
-        <div class="faq-a"><p>Yes. Tap the three-dot menu on any post you authored and select Delete. Your post will be removed immediately.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggle(this)">Who can see my messages? <span class="faq-arrow">›</span></div>
-        <div class="faq-a"><p>Messages are private between you and your trainer only. No other users can see your conversations.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggle(this)">How do I manage my trainer subscription? <span class="faq-arrow">›</span></div>
-        <div class="faq-a"><p>Trainer subscriptions are managed through Apple. Go to your iPhone Settings → Apple ID → Subscriptions to view, change, or cancel your MuscleFLo subscription at any time.</p></div>
-      </div>
+      <details class="faq-item"><summary>How do I sign in? <span class="faq-arrow" aria-hidden="true">›</span></summary><div class="faq-a"><p>MuscleFlo uses Sign in with Apple or Google, so there's no password to remember. On the sign-in screen, tap <strong>Continue with iCloud</strong> (Apple) or <strong>Continue with Gmail</strong> (Google).</p></div></details>
+      <details class="faq-item"><summary>How does MuscleFlo work? <span class="faq-arrow" aria-hidden="true">›</span></summary><div class="faq-a"><p>Pick a body part on the Home screen and MuscleFlo builds the workout for you, or answer a short quiz to get a weekly plan. Open the workout, follow the demo for each exercise and tap <strong>Mark as Complete</strong>. When you're done, tap <strong>Finish workout</strong>. There are no weights or reps to type in.</p></div></details>
+      <details class="faq-item"><summary>Does it work without signal? <span class="faq-arrow" aria-hidden="true">›</span></summary><div class="faq-a"><p>Yes. Most gyms have poor reception, so MuscleFlo keeps your workouts on your phone. With no signal you can open your workouts and plan, start a new workout, check exercises off and finish. Everything syncs on its own when you're back online.</p><p>Exercise demos you've already seen, plus the ones in your upcoming workouts, are saved on your phone too. Signing in and creating a new plan need a connection.</p></div></details>
+      <details class="faq-item"><summary>How do I change my level or where I train? <span class="faq-arrow" aria-hidden="true">›</span></summary><div class="faq-a"><p>Go to <strong>Profile</strong> and pick your <strong>Level</strong> (Beginner, Intermediate or Advanced) and <strong>Where you train</strong> (gym, home with dumbbells, or no equipment). New workouts use those settings.</p><p>Your weekly plan keeps the place you chose for it in the quiz. To change it, retake the quiz from the <strong>Plan</strong> screen.</p></div></details>
+      <details class="faq-item"><summary>How do I change the language or text size? <span class="faq-arrow" aria-hidden="true">›</span></summary><div class="faq-a"><p>In <strong>Profile</strong>, choose <strong>EN</strong> or <strong>ES</strong> for English or Spanish, and pick a text size: Normal, Large or Extra large.</p></div></details>
+      <details class="faq-item"><summary>What's included in MuscleFlo Pro? <span class="faq-arrow" aria-hidden="true">›</span></summary><div class="faq-a"><p>The free version includes a starter set of exercises for every body part, body-part workouts, the weekly plan and progress tracking. MuscleFlo Pro unlocks the full library of 1,400+ exercises. Pro is available monthly or yearly; the current prices are shown in the app.</p></div></details>
+      <details class="faq-item"><summary>Is there a free trial? <span class="faq-arrow" aria-hidden="true">›</span></summary><div class="faq-a"><p>New subscribers may be offered a free trial. If one is available, its length and the price after it are shown in the app and on Apple's purchase sheet before you confirm. To avoid being charged, cancel at least 24 hours before the trial ends.</p></div></details>
+      <details class="faq-item"><summary>How do I cancel my subscription? <span class="faq-arrow" aria-hidden="true">›</span></summary><div class="faq-a"><p>Subscriptions are managed by Apple. On your iPhone, open <strong>Settings</strong>, tap your name, then <strong>Subscriptions</strong>, then <strong>MuscleFlo</strong>. Deleting the app does not cancel a subscription. You keep Pro until the end of the period you've paid for.</p></div></details>
+      <details class="faq-item"><summary>How do I get a refund? <span class="faq-arrow" aria-hidden="true">›</span></summary><div class="faq-a"><p>Apple handles all payments and refunds. You can request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></div></details>
+      <details class="faq-item"><summary>I paid but don't have Pro <span class="faq-arrow" aria-hidden="true">›</span></summary><div class="faq-a"><p>Open the Pro screen and tap <strong>Restore Purchases</strong>. Make sure you're signed in to the same Apple ID you used to subscribe. If it still doesn't work, email us at <a href="mailto:aflores@dreamsflo.com">aflores@dreamsflo.com</a>.</p></div></details>
+      <details class="faq-item"><summary>How do I track my progress? <span class="faq-arrow" aria-hidden="true">›</span></summary><div class="faq-a"><p>Open <strong>Progress</strong> to log your weight and waist, add progress photos and see the trend over time. Your progress photos are private: only you can see them.</p></div></details>
+      <details class="faq-item"><summary>How do I delete my account? <span class="faq-arrow" aria-hidden="true">›</span></summary><div class="faq-a"><p>In the app, go to <strong>Profile</strong> and tap <strong>Delete Account</strong>. This permanently deletes your account, workouts, progress entries and progress photos. If you can't sign in, email us at <a href="mailto:aflores@dreamsflo.com">aflores@dreamsflo.com</a> from the email on your account and we'll delete it for you.</p><p>Deleting your account does not cancel a subscription with Apple; cancel it first in your iPhone settings.</p></div></details>
+      <details class="faq-item"><summary>Is MuscleFlo medical advice? <span class="faq-arrow" aria-hidden="true">›</span></summary><div class="faq-a"><p>No. MuscleFlo provides general fitness information. Talk to your doctor before starting a new exercise program, and stop if you feel pain, dizziness or shortness of breath.</p></div></details>
     </section>
-
     <section>
-      <h2>Get in touch</h2>
+      <h2>Contact us</h2>
       <div class="contact-grid">
-        <div class="contact-card">
-          <div class="contact-card-title">Email support</div>
-          <p><a href="mailto:aflores@dreamsflo.com">aflores@dreamsflo.com</a></p>
-          <p class="note">We typically respond within 1 business day.</p>
-        </div>
-        <div class="contact-card">
-          <div class="contact-card-title">Privacy concerns</div>
-          <p><a href="privacy-policy.html">Read our privacy policy</a></p>
-          <p class="note">Or email us for data requests and deletions.</p>
-        </div>
+        <div class="contact-card"><div class="contact-card-title">Email support</div><p><a href="mailto:aflores@dreamsflo.com">aflores@dreamsflo.com</a></p><p class="note">We usually reply within 1 business day.</p></div>
+        <div class="contact-card"><div class="contact-card-title">Privacy</div><p><a href="privacy-policy.html">Read our privacy policy</a></p><p class="note">Or email us for data requests and deletions.</p></div>
       </div>
     </section>
-  </div>
 
+  </main>
   <footer>
     <div class="wrap">
       <div class="footer-inner">
-        <p>© 2026 DreamsFlo LLC · MuscleFLo · All rights reserved</p>
-        <nav>
-          <a href="index.html">Support</a>
-          <a href="privacy-policy.html" style="margin-left:1.5rem;">Privacy</a>
-          <a href="Terms-of-service.html" style="margin-left:1.5rem;">Terms</a>
-        </nav>
+        <p>© 2026 DreamsFlo LLC · MuscleFlo · All rights reserved</p>
+        <nav><a href="index.html">Support</a><a href="privacy-policy.html">Privacy</a><a href="Terms-of-service.html">Terms</a></nav>
       </div>
     </div>
   </footer>
-
-  <script>
-    function toggle(el) { el.parentElement.classList.toggle('open'); }
-  </script>
 </body>
 </html>
