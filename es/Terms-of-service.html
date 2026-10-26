@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Términos del servicio — MuscleFlo</title>
+  <link rel="alternate" hreflang="en" href="https://aflo17.github.io/Muscle-FLo/Terms-of-service.html" />
+  <link rel="alternate" hreflang="es" href="https://aflo17.github.io/Muscle-FLo/es/Terms-of-service.html" />
+  <style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #080808; --surface: #0f0f0f; --surface2: #141414; --border: #1c1c1c;
+  --blue: #2e7dff; --blue-bright: #4d94ff; --blue-dim: #1a4a99;
+  --silver: #c8d0d8; --silver-dim: #7a8590; --text: #e8eaed; --muted: #6b7580;
+  --font: -apple-system, 'Helvetica Neue', Arial, sans-serif; --mono: 'Courier New', monospace;
+}
+body { background: var(--bg); color: var(--text); font-family: var(--font); line-height: 1.75; min-height: 100vh; }
+header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 1.25rem 0; position: sticky; top: 0; z-index: 10; }
+.wrap { max-width: 740px; margin: 0 auto; padding: 0 2rem; }
+@media (max-width: 500px) { .wrap { padding: 0 1rem; } }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.logo { font-family: var(--mono); font-size: 1rem; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; }
+.logo .muscle { color: var(--silver); } .logo .flo { color: var(--blue-bright); }
+nav { display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; }
+nav a { font-size: 0.8rem; letter-spacing: 0.06em; color: var(--silver-dim); text-decoration: none; text-transform: uppercase; transition: color 0.15s; }
+nav a:hover, nav a.active { color: var(--blue-bright); }
+nav a.lang { border: 1px solid var(--border); border-radius: 999px; padding: 0.15rem 0.7rem; color: var(--silver); }
+nav a.lang:hover { border-color: var(--blue-dim); }
+.hero { padding: 4rem 0 3rem; }
+.hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 0.72rem; font-family: var(--mono); letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue-bright); margin-bottom: 1.25rem; }
+.hero-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--blue-bright); }
+h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 700; letter-spacing: -0.02em; color: var(--text); margin-bottom: 0.75rem; line-height: 1.1; }
+.subtitle { color: #9aa3ad; font-size: 1rem; }
+.hero-meta { font-size: 0.8rem; color: var(--muted); font-family: var(--mono); }
+.divider { height: 1px; background: linear-gradient(90deg, var(--blue-dim) 0%, var(--border) 60%, transparent 100%); margin: 0 0 3rem; }
+section { margin-bottom: 2.75rem; }
+h2 { font-size: 0.72rem; font-family: var(--mono); letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue-bright); margin-bottom: 1rem; display: flex; align-items: center; gap: 10px; }
+h2::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+p { color: #9aa3ad; font-size: 0.95rem; margin-bottom: 0.9rem; }
+ul { padding-left: 0; margin-bottom: 0.9rem; list-style: none; }
+li { color: #9aa3ad; font-size: 0.95rem; margin-bottom: 0.5rem; padding-left: 1.25rem; position: relative; }
+li::before { content: '—'; position: absolute; left: 0; color: var(--blue-dim); font-size: 0.8rem; }
+strong { color: var(--silver); font-weight: 500; }
+a { color: var(--blue-bright); text-decoration: none; }
+a:hover { text-decoration: underline; }
+details.faq-item { border: 1px solid var(--border); border-radius: 4px; margin-bottom: 0.6rem; overflow: hidden; background: var(--surface); }
+details.faq-item summary { padding: 1rem 1.25rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--silver); list-style: none; gap: 1rem; }
+details.faq-item summary::-webkit-details-marker { display: none; }
+details.faq-item summary:hover { background: var(--surface2); }
+.faq-arrow { color: var(--blue-bright); font-size: 1.1rem; transition: transform 0.2s; flex-shrink: 0; }
+details.faq-item[open] .faq-arrow { transform: rotate(90deg); }
+.faq-a { padding: 0 1.25rem 1rem; border-top: 1px solid var(--border); background: var(--bg); }
+.faq-a p, .faq-a li { margin: 0.75rem 0 0; font-size: 0.9rem; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media (max-width: 500px) { .contact-grid { grid-template-columns: 1fr; } }
+.contact-card { background: var(--surface); border: 1px solid var(--border); border-top: 2px solid var(--blue); border-radius: 4px; padding: 1.5rem; }
+.contact-card-title { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-bright); margin-bottom: 0.75rem; }
+.contact-card p { margin: 0; font-size: 0.9rem; }
+.contact-card .note { color: var(--muted); font-size: 0.8rem; margin-top: 0.4rem; }
+.contact-box { background: var(--surface2); border: 1px solid var(--border); border-left: 2px solid var(--blue); padding: 1.5rem 1.75rem; border-radius: 4px; }
+.contact-box p:last-child { margin-bottom: 0; }
+footer { border-top: 1px solid var(--border); padding: 2rem 0; margin-top: 3rem; }
+.footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+footer p { font-size: 0.75rem; color: var(--muted); margin: 0; font-family: var(--mono); }
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="header-inner">
+        <div class="logo"><span class="muscle">Muscle</span><span class="flo">Flo</span></div>
+        <nav aria-label="Ayuda"><a href="index.html">Ayuda</a><a href="privacy-policy.html">Privacidad</a><a href="Terms-of-service.html" class="active" aria-current="page">Términos</a><a class="lang" href="../Terms-of-service.html" hreflang="en">English</a></nav>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="hero">
+      <div class="hero-eyebrow">Legal</div>
+      <h1>Términos del servicio</h1>
+      <div class="hero-meta">Vigentes y actualizados el 26 de octubre de 2026</div>
+    </div>
+    <div class="divider"></div>
+    <section>
+      <h2>Acuerdo</h2>
+      <p>Estos Términos del servicio son un acuerdo entre tú y DreamsFlo LLC ("nosotros") para el uso de la app MuscleFlo. Al usar MuscleFlo, aceptas estos términos y nuestra <a href="privacy-policy.html">Política de privacidad</a>. Si no estás de acuerdo, por favor no uses la app.</p>
+    </section>
+    <section>
+      <h2>Requisitos</h2>
+      <p>Debes tener al menos 13 años para usar MuscleFlo. Si eres menor de edad según las leyes de tu país, necesitas el permiso de tu madre, padre o tutor.</p>
+    </section>
+    <section>
+      <h2>Qué ofrece MuscleFlo</h2>
+      <p>MuscleFlo arma rutinas por parte del cuerpo, crea planes semanales, muestra demostraciones de ejercicios y te permite seguir tu progreso. Las funciones pueden cambiar con el tiempo a medida que mejoramos la app.</p>
+    </section>
+    <section>
+      <h2>Salud y seguridad</h2>
+      <p>MuscleFlo ofrece información general de acondicionamiento físico. No es consejo médico y no sustituye a un médico, fisioterapeuta o entrenador certificado.</p>
+      <ul>
+        <li>Consulta a tu médico antes de empezar cualquier programa de ejercicio, sobre todo si tienes una condición médica, una lesión o estás embarazada.</li>
+        <li>Usa la técnica correcta, elige pesos que puedas controlar y detente de inmediato si sientes dolor, mareo o falta de aire.</li>
+        <li>Haces ejercicio bajo tu propio riesgo y eres responsable de tu seguridad y del equipo que uses.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Tu cuenta</h2>
+      <p>Inicias sesión con Apple o con Google. Eres responsable de la actividad en tu cuenta y de mantener segura tu cuenta de Apple o de Google. Puedes eliminar tu cuenta de MuscleFlo en cualquier momento desde Perfil en la app.</p>
+    </section>
+    <section>
+      <h2>Tu contenido</h2>
+      <p>Eres dueño de la información que agregas, como registros de progreso, notas y fotos de progreso. Nos das permiso para guardarla y procesarla solo para que MuscleFlo funcione para ti. No compartimos tus fotos de progreso con nadie.</p>
+    </section>
+    <section>
+      <h2>Uso aceptable</h2>
+      <p>Aceptas no:</p>
+      <ul>
+        <li>Usar MuscleFlo para algo ilegal.</li>
+        <li>Intentar acceder a cuentas o datos de otras personas, ni interferir con la seguridad o los servidores de la app.</li>
+        <li>Copiar, descargar de forma masiva, extraer o redistribuir la biblioteca de ejercicios, las demostraciones u otro contenido de la app.</li>
+        <li>Aplicar ingeniería inversa a la app, salvo donde la ley lo permita.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Suscripciones a MuscleFlo Pro</h2>
+      <ul>
+        <li>MuscleFlo Pro es una suscripción opcional de renovación automática, mensual o anual. Los precios se muestran en la app antes de comprar.</li>
+        <li>El pago se carga a tu Apple ID al confirmar la compra. La suscripción se renueva automáticamente a menos que la canceles al menos 24 horas antes de que termine el periodo actual, y la renovación se cobra dentro de las 24 horas previas al final del periodo.</li>
+        <li>Si se ofrece una prueba gratis, se te cobrará al terminar a menos que la canceles al menos 24 horas antes. Cualquier parte no usada de la prueba termina al comprar una suscripción.</li>
+        <li>Administra o cancela en la Configuración de tu iPhone: toca tu nombre y luego Suscripciones. Borrar la app no cancela tu suscripción.</li>
+        <li>Apple se encarga de los reembolsos según sus políticas; DreamsFlo LLC no procesa reembolsos directamente.</li>
+        <li>Si cambiamos los precios, Apple te avisará como corresponda y podrás cancelar antes de que se aplique el nuevo precio.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Biblioteca de ejercicios y contenido de la app</h2>
+      <p>La app, su diseño y la biblioteca de ejercicios, incluidas las demostraciones y las instrucciones, pertenecen a DreamsFlo LLC o a sus licenciantes y están protegidas por derechos de autor y otras leyes. Te damos una licencia personal e intransferible para usarlas solo dentro de MuscleFlo.</p>
+    </section>
+    <section>
+      <h2>Disponibilidad</h2>
+      <p>Muchas funciones de MuscleFlo funcionan sin conexión y se sincronizan cuando vuelves a estar en línea. Trabajamos para que la app funcione siempre, pero no podemos garantizar que esté disponible en todo momento ni libre de errores, y algunas funciones necesitan conexión a internet.</p>
+    </section>
+    <section>
+      <h2>Apple</h2>
+      <p>Estos términos son entre tú y DreamsFlo LLC, no con Apple. Apple no es responsable de MuscleFlo ni de su contenido, y no tiene obligación de darle soporte. Tu uso de la app también debe cumplir los Términos y condiciones de los Servicios de Medios de Apple. Apple y sus subsidiarias son terceros beneficiarios de estos términos y pueden hacerlos valer.</p>
+    </section>
+    <section>
+      <h2>Exclusión de garantías</h2>
+      <p>MuscleFlo se ofrece "tal cual" y "según disponibilidad", sin garantías de ningún tipo, en la medida máxima que permita la ley.</p>
+    </section>
+    <section>
+      <h2>Limitación de responsabilidad</h2>
+      <p>En la medida máxima que permita la ley, DreamsFlo LLC no es responsable de daños indirectos, incidentales, especiales, consecuentes o punitivos, ni de lesiones, que resulten del uso de MuscleFlo o de los ejercicios que contiene. Nuestra responsabilidad total por cualquier reclamo se limita a lo que hayas pagado por MuscleFlo en los 12 meses anteriores al reclamo.</p>
+    </section>
+    <section>
+      <h2>Suspensión y cancelación</h2>
+      <p>Podemos suspender o terminar tu acceso si incumples estos términos, usas mal la app o pones a otros en riesgo. Puedes dejar de usar MuscleFlo y eliminar tu cuenta en cualquier momento.</p>
+    </section>
+    <section>
+      <h2>Cambios a estos términos</h2>
+      <p>Podemos actualizar estos términos. Cambiaremos la fecha al inicio de esta página y te avisaremos en la app si los cambios son importantes. Si sigues usando MuscleFlo después de una actualización, aceptas los nuevos términos.</p>
+    </section>
+    <section>
+      <h2>Contáctanos</h2>
+      <div class="contact-box"><p><strong>DreamsFlo LLC</strong></p><p>Preguntas sobre estos términos: <a href="mailto:aflores@dreamsflo.com">aflores@dreamsflo.com</a></p></div>
+    </section>
+
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner">
+        <p>© 2026 DreamsFlo LLC · MuscleFlo · Todos los derechos reservados</p>
+        <nav><a href="index.html">Ayuda</a><a href="privacy-policy.html">Privacidad</a><a href="Terms-of-service.html">Términos</a></nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

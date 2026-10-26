@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de privacidad — MuscleFlo</title>
+  <link rel="alternate" hreflang="en" href="https://aflo17.github.io/Muscle-FLo/privacy-policy.html" />
+  <link rel="alternate" hreflang="es" href="https://aflo17.github.io/Muscle-FLo/es/privacy-policy.html" />
+  <style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #080808; --surface: #0f0f0f; --surface2: #141414; --border: #1c1c1c;
+  --blue: #2e7dff; --blue-bright: #4d94ff; --blue-dim: #1a4a99;
+  --silver: #c8d0d8; --silver-dim: #7a8590; --text: #e8eaed; --muted: #6b7580;
+  --font: -apple-system, 'Helvetica Neue', Arial, sans-serif; --mono: 'Courier New', monospace;
+}
+body { background: var(--bg); color: var(--text); font-family: var(--font); line-height: 1.75; min-height: 100vh; }
+header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 1.25rem 0; position: sticky; top: 0; z-index: 10; }
+.wrap { max-width: 740px; margin: 0 auto; padding: 0 2rem; }
+@media (max-width: 500px) { .wrap { padding: 0 1rem; } }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.logo { font-family: var(--mono); font-size: 1rem; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; }
+.logo .muscle { color: var(--silver); } .logo .flo { color: var(--blue-bright); }
+nav { display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; }
+nav a { font-size: 0.8rem; letter-spacing: 0.06em; color: var(--silver-dim); text-decoration: none; text-transform: uppercase; transition: color 0.15s; }
+nav a:hover, nav a.active { color: var(--blue-bright); }
+nav a.lang { border: 1px solid var(--border); border-radius: 999px; padding: 0.15rem 0.7rem; color: var(--silver); }
+nav a.lang:hover { border-color: var(--blue-dim); }
+.hero { padding: 4rem 0 3rem; }
+.hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 0.72rem; font-family: var(--mono); letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue-bright); margin-bottom: 1.25rem; }
+.hero-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--blue-bright); }
+h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 700; letter-spacing: -0.02em; color: var(--text); margin-bottom: 0.75rem; line-height: 1.1; }
+.subtitle { color: #9aa3ad; font-size: 1rem; }
+.hero-meta { font-size: 0.8rem; color: var(--muted); font-family: var(--mono); }
+.divider { height: 1px; background: linear-gradient(90deg, var(--blue-dim) 0%, var(--border) 60%, transparent 100%); margin: 0 0 3rem; }
+section { margin-bottom: 2.75rem; }
+h2 { font-size: 0.72rem; font-family: var(--mono); letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue-bright); margin-bottom: 1rem; display: flex; align-items: center; gap: 10px; }
+h2::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+p { color: #9aa3ad; font-size: 0.95rem; margin-bottom: 0.9rem; }
+ul { padding-left: 0; margin-bottom: 0.9rem; list-style: none; }
+li { color: #9aa3ad; font-size: 0.95rem; margin-bottom: 0.5rem; padding-left: 1.25rem; position: relative; }
+li::before { content: '—'; position: absolute; left: 0; color: var(--blue-dim); font-size: 0.8rem; }
+strong { color: var(--silver); font-weight: 500; }
+a { color: var(--blue-bright); text-decoration: none; }
+a:hover { text-decoration: underline; }
+details.faq-item { border: 1px solid var(--border); border-radius: 4px; margin-bottom: 0.6rem; overflow: hidden; background: var(--surface); }
+details.faq-item summary { padding: 1rem 1.25rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--silver); list-style: none; gap: 1rem; }
+details.faq-item summary::-webkit-details-marker { display: none; }
+details.faq-item summary:hover { background: var(--surface2); }
+.faq-arrow { color: var(--blue-bright); font-size: 1.1rem; transition: transform 0.2s; flex-shrink: 0; }
+details.faq-item[open] .faq-arrow { transform: rotate(90deg); }
+.faq-a { padding: 0 1.25rem 1rem; border-top: 1px solid var(--border); background: var(--bg); }
+.faq-a p, .faq-a li { margin: 0.75rem 0 0; font-size: 0.9rem; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media (max-width: 500px) { .contact-grid { grid-template-columns: 1fr; } }
+.contact-card { background: var(--surface); border: 1px solid var(--border); border-top: 2px solid var(--blue); border-radius: 4px; padding: 1.5rem; }
+.contact-card-title { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-bright); margin-bottom: 0.75rem; }
+.contact-card p { margin: 0; font-size: 0.9rem; }
+.contact-card .note { color: var(--muted); font-size: 0.8rem; margin-top: 0.4rem; }
+.contact-box { background: var(--surface2); border: 1px solid var(--border); border-left: 2px solid var(--blue); padding: 1.5rem 1.75rem; border-radius: 4px; }
+.contact-box p:last-child { margin-bottom: 0; }
+footer { border-top: 1px solid var(--border); padding: 2rem 0; margin-top: 3rem; }
+.footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+footer p { font-size: 0.75rem; color: var(--muted); margin: 0; font-family: var(--mono); }
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="header-inner">
+        <div class="logo"><span class="muscle">Muscle</span><span class="flo">Flo</span></div>
+        <nav aria-label="Ayuda"><a href="index.html">Ayuda</a><a href="privacy-policy.html" class="active" aria-current="page">Privacidad</a><a href="Terms-of-service.html">Términos</a><a class="lang" href="../privacy-policy.html" hreflang="en">English</a></nav>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="hero">
+      <div class="hero-eyebrow">Legal</div>
+      <h1>Política de privacidad</h1>
+      <div class="hero-meta">Vigente y actualizada el 26 de octubre de 2026</div>
+    </div>
+    <div class="divider"></div>
+    <section>
+      <h2>Resumen</h2>
+      <p>MuscleFlo es una app de entrenamiento creada por DreamsFlo LLC. Eliges una parte del cuerpo o sigues un plan semanal, y marcas cada ejercicio al terminarlo. Esta política explica qué información recopilamos, cómo la usamos y qué opciones tienes.</p>
+      <p>Solo recopilamos lo necesario para que la app funcione. No vendemos tu información personal, no mostramos anuncios y no te rastreamos en apps ni sitios web de otras empresas.</p>
+    </section>
+    <section>
+      <h2>Información que recopilamos</h2>
+      <p>Cuando usas MuscleFlo, recopilamos:</p>
+      <ul>
+        <li><strong>Datos de la cuenta</strong>: tu nombre y correo electrónico de Iniciar sesión con Apple o con Google. Si usas Ocultar mi correo de Apple, recibimos una dirección privada en su lugar.</li>
+        <li><strong>Número de teléfono (opcional)</strong>: solo si decides escribirlo al registrarte.</li>
+        <li><strong>Perfil y preferencias</strong>: tu objetivo, tu nivel, dónde entrenas, tu plan semanal, idioma y unidades.</li>
+        <li><strong>Datos corporales (opcionales)</strong>: estatura, edad y peso inicial, solo si los escribes.</li>
+        <li><strong>Rutinas</strong>: las rutinas que creas o empiezas, los ejercicios que marcas, cuándo las terminas y tus récords personales.</li>
+        <li><strong>Progreso</strong>: registros de peso y cintura, notas y las fotos de progreso que agregues. Las fotos de progreso se guardan de forma privada y solo tú puedes verlas.</li>
+        <li><strong>Comentarios</strong>: los mensajes que nos envías desde la app.</li>
+        <li><strong>Token de notificaciones</strong>: si permites notificaciones, un identificador del dispositivo para poder enviarlas.</li>
+        <li><strong>Estado de la suscripción</strong>: si tienes MuscleFlo Pro, según Apple y RevenueCat. Nunca vemos ni guardamos los datos de tu tarjeta; Apple se encarga del pago.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Información guardada en tu teléfono</h2>
+      <p>Para que la app funcione sin señal, MuscleFlo guarda cierta información en tu dispositivo: tus rutinas y tu plan, la lista de ejercicios, tu perfil, los ejercicios que marcaste en una rutina en curso, las rutinas pendientes de sincronizar y las demos de ejercicios que viste o que vienen en tus próximas rutinas. El tamaño del texto y ajustes similares se guardan solo en tu dispositivo.</p>
+      <p>MuscleFlo pide acceso a tus fotos o a la cámara solo cuando agregas una foto de progreso, y a tu calendario solo cuando tocas <strong>Añadir al calendario</strong>; agrega ese evento y no lee tu calendario.</p>
+    </section>
+    <section>
+      <h2>Cómo usamos tu información</h2>
+      <ul>
+        <li>Para que MuscleFlo funcione: crear tus rutinas y tu plan, guardar tu progreso y sincronizarlo.</li>
+        <li>Para mostrarte las rutinas en tu idioma y a tu nivel.</li>
+        <li>Para ofrecerte MuscleFlo Pro y verificar tu suscripción.</li>
+        <li>Para enviarte las notificaciones que hayas permitido.</li>
+        <li>Para responder tus mensajes y solicitudes de ayuda.</li>
+        <li>Para corregir errores y mantener la app segura.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Servicios que usamos</h2>
+      <p>Compartimos información con estos proveedores solo para que operen partes de MuscleFlo por nosotros:</p>
+      <ul>
+        <li><strong>Supabase</strong>: base de datos, inicio de sesión y almacenamiento privado de fotos.</li>
+        <li><strong>Apple</strong> y <strong>Google</strong>: inicio de sesión, y Apple para pagos y suscripciones.</li>
+        <li><strong>RevenueCat</strong>: lleva el control del estado de tu suscripción.</li>
+        <li><strong>Expo</strong>: entrega las notificaciones.</li>
+        <li><strong>Resend</strong>: nos envía correos internos cuando alguien se registra, nos envía comentarios o elimina su cuenta. Estos correos incluyen el nombre, el correo y el teléfono de esa persona, si lo dio.</li>
+      </ul>
+      <p>Las demostraciones de ejercicios provienen de una biblioteca de ejercicios con licencia y se entregan desde nuestros propios servidores. No se envía información sobre ti al proveedor de la biblioteca.</p>
+      <p>También podemos compartir información si la ley lo exige, o para proteger los derechos y la seguridad de nuestros usuarios o de DreamsFlo LLC.</p>
+    </section>
+    <section>
+      <h2>Conservación y eliminación de tu información</h2>
+      <p>Conservamos tu información mientras tengas una cuenta.</p>
+      <p>Puedes eliminar tu cuenta en cualquier momento desde la app: ve a <strong>Perfil</strong> y toca <strong>Eliminar cuenta</strong>. Esto elimina de inmediato tu inicio de sesión, tus rutinas, registros de progreso, récords personales, fotos de progreso y comentarios. Un registro sin tu nombre, correo ni teléfono se conserva hasta 30 días para ayudar con soporte y prevención de fraude, y después se elimina.</p>
+      <p>Los correos internos que hayamos recibido (ver Resend arriba) pueden permanecer en nuestro buzón. Apple y RevenueCat conservan los registros de compra según sus propias políticas.</p>
+    </section>
+    <section>
+      <h2>Seguridad</h2>
+      <p>Tu información viaja por conexiones cifradas y está protegida con reglas de acceso para que cada cuenta solo pueda ver sus propios datos. Las fotos de progreso se guardan en almacenamiento privado y solo se muestran mediante enlaces temporales. Ningún sistema es perfectamente seguro, pero trabajamos para proteger tu información.</p>
+    </section>
+    <section>
+      <h2>Menores de edad</h2>
+      <p>MuscleFlo no está dirigida a menores de 13 años y no recopilamos su información a sabiendas. Si crees que un menor de 13 años nos dio información, contáctanos y la eliminaremos.</p>
+    </section>
+    <section>
+      <h2>Tus opciones y derechos</h2>
+      <p>Puedes ver y cambiar la mayor parte de tu información en la app. También puedes pedirnos una copia de tus datos, corregirlos o eliminarlos escribiendo a <a href="mailto:aflores@dreamsflo.com">aflores@dreamsflo.com</a>. Según dónde vivas, puedes tener derechos adicionales bajo la ley local, y los respetaremos.</p>
+    </section>
+    <section>
+      <h2>Cambios a esta política</h2>
+      <p>Si cambiamos esta política, actualizaremos la fecha al inicio de esta página. Si los cambios son importantes, te avisaremos en la app.</p>
+    </section>
+    <section>
+      <h2>Contáctanos</h2>
+      <div class="contact-box"><p><strong>DreamsFlo LLC</strong></p><p>Preguntas sobre esta política o tus datos: <a href="mailto:aflores@dreamsflo.com">aflores@dreamsflo.com</a></p></div>
+    </section>
+
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner">
+        <p>© 2026 DreamsFlo LLC · MuscleFlo · Todos los derechos reservados</p>
+        <nav><a href="index.html">Ayuda</a><a href="privacy-policy.html">Privacidad</a><a href="Terms-of-service.html">Términos</a></nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
